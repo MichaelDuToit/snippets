@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+    font-size:15px;
+}
+table {
+    width:100%;
+    min-width:fit-content;
+    overflow:scroll;
+    font-size:1em;
+    border-collapse: collapse;
+}
+th, td {
+    min-width:1.2em;
+    text-align: left;
+    min-width: fit-content;
+    width: 20%;
+    border: 0px;
+}
+th {
+    font-weight: bold;
+}
+thead tr {
+    cursor: pointer;
+}
+thead tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+tbody tr:hover, tbody tr:focus {
+    background-color: #c0c0c0;
+}

@@ -1,0 +1,162 @@
+*, *:before, *:after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+    height:100%;
+    font-family: sans-serif;
+    font-size:16px;
+}
+nav {
+    background-color: #333333;
+    border-bottom: 2px solid #aaaaaa;
+    width:100%;
+    position: initial;
+    z-index:1;
+    text-align: center;
+}
+nav, nav a, nav img, nav li, nav ul {
+    transition: 0.5s all;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+nav a:active, nav a:hover, nav a:focus {
+    color: #333333;
+    background-color: #aaaaaa;
+}
+nav ul {
+    display: inline;
+    list-style-type: none;
+    line-height: 3.1rem;
+    background-color: #333333;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: middle;
+}
+nav li a {
+    display: block;
+    color: #f2f2f2;
+    padding: 0rem 1rem;
+    font-size: 0.95rem;
+}
+nav img {
+    background-color: #aaaaaa;
+}
+nav.large {
+    z-index: 1;
+    position: initial;
+}
+nav.large img {
+    display: block;
+    max-width: 100%;
+    min-width: 75%;
+    width:auto;
+    height:6.67rem;
+    margin: 0 auto;
+}
+nav.large li {
+    text-align: center;
+}
+nav.small {
+    z-index:10;
+    position:fixed;
+    top:0;
+    padding-right:0.2rem;
+}
+nav.small img {
+    display: inline;
+    float: left;
+    max-width: 50%;
+    min-width: 20%;
+    width: auto;
+    height: 2.97rem;
+    padding:0.17rem;
+}
+nav.small li {
+    font-size: 0.85rem;
+}
+nav ul li.nav-menu-btn a {
+    display: none;
+    cursor: pointer;
+}
+.nav-menu-btn-icon {
+    display:none;
+}
+
+main div {
+    height:500px;
+    border-bottom:2px solid palevioletred;
+}
+
+@media all and (max-width:835px){
+    nav.responsive ul ul {
+        height:auto;
+        max-height:65vh;
+        overflow:auto;
+        display:block;
+    }
+    nav.large img {
+        height:3.33rem;
+        display:block;
+    }
+    nav.small img {
+        height:3.2rem;
+        width:30%;
+        display:block;
+    }
+    nav.large li, nav.small li {
+        width:100%;
+        text-align:center;
+    }
+    nav.large ul {
+        min-width:100%;
+    }
+    nav.responsive.large ul {
+        min-width:100%;
+        display:block;
+        position:absolute;
+        right:0;
+        z-index:10;
+    }
+    nav.small ul {
+        min-width:68%;
+        width:68%;
+        position:absolute;
+        right:0;
+        z-index:10;
+        display:block;
+    }
+    nav ul ul li{
+        display:none;
+    }
+    nav ul li.nav-menu-btn a {
+        display:inline-block;
+        width:100%;
+        text-align:center;
+    }
+    nav.responsive ul li {
+        position:relative;
+        display:block;
+        border-bottom:2px solid #aaaaaa;
+    }    
+    nav.responsive ul li a {
+        display:block;
+        text-align:center;
+        width:100%;
+    }
+    .nav-menu-btn-icon{
+        display:inline-block;
+        font-size:1rem;
+        position:relative;
+        left:25%;
+    }
+}

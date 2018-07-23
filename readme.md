@@ -1,0 +1,1 @@
+Repository with some useful code/project snippets.

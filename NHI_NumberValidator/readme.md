@@ -1,0 +1,1 @@
+JS script to validate whether the NHI number provided is valid.
