@@ -8,7 +8,7 @@ Based off a script I saw somewhere.
 #### NHI_NumberValidator ####
 Javascript function to check whether the number/string provided is a valid NHI Number.
 Based off the PHP function/script on Wikipedia but rewritten in JS to allow client-side validation.  
-Working on a ES6 version (in folder).  
+ES6 version also in folder.
 
 #### Responsive_Resizing_Nav ####
 JS/CSS for a nav menu with a resizing image/logo in scroll with a dropdown menu.
